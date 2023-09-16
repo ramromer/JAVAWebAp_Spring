@@ -9,4 +9,18 @@ public class ULPController {
     public String inicio(){
         return "inicio";
     }
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
+    @RequestMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
+
+    @RequestMapping("/alumno$")
+    public String alumno(){
+        return "alumno";
+    }
+
 }
