@@ -6,11 +6,24 @@ body, ul, li {
 
 /* Basic styles for the navbar */
 .navbar {
-    background-color: #007BFF;
+    position:fixed;
+    top:0;
+    background-color: #154176;
+    justify-content: center;
     color: #fff;
     padding: 10px 0;
 }
 
+.contenido{
+     padding-top:85px;
+     display: flex;
+     flex-direction: column;
+     max-width: 1200px;
+     height:100%;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,11 +37,12 @@ body, ul, li {
 }
 .footer {
     background-color:#154176;
-
-    margin: 0 auto;
-    display:flex;
-    justify-content: center;
-    align-items: bottom;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 .menu {
     list-style: none;

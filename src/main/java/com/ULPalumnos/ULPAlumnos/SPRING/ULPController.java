@@ -28,7 +28,7 @@ public class ULPController {
     }
 
     @GetMapping("/alumnos")
-    public String alumno(Model  model) {
+    public String alumnos(Model  model) {
     AlumnoData aluData = new AlumnoData();
     List<Alumno> objectList = aluData.listarAlumnos();
      Context context = new Context();

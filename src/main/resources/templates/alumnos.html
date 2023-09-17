@@ -3,9 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Results</title>
+        <link rel="stylesheet" href="css/inicio.css">
+        <title>Estudiantes</title>
     </head>
     <body>
+    <nav class="navbar">
+        <div class="container">
+            <img class="logo" src="images/logoULPVirtual.png" alt="Logo">
+            <ul class="menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">Institucional</a></li>
+                <li><a href="#">Posgrados</a></li>
+                <li><a href="#">Investigación</a></li>
+                <li><a href="#">Vinculación</a></li>
+                <li><a href="/alumnos">Estudiantes</a></li>
+                <li><a href="#">Docentes</a></li>
+                <li><a href="#">Graduados</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
         <h1>Results</h1>
         <table>
             <tr>
@@ -23,5 +42,10 @@
                 <td th:text="${Alumno.nombre}"></td>
             </tr>
         </table>
+    <footer>
+        <div class="footer">
+            <img id="footer" src="images/footer.png" alt="footer">
+        </div>
+    </footer>
     </body>
 </html>

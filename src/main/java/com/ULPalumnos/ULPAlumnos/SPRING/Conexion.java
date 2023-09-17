@@ -21,12 +21,12 @@ public class Conexion {
         if (connection==null) {
             try {
                 Class.forName("org.mariadb.jdbc.Driver");
-                System.out.println(URL+PORT+DB);
+                System.out.println("Conectando a: "+URL+PORT+DB);
                 connection= DriverManager.getConnection(URL+PORT+DB,USUARIO,PASSWORD);
-                System.out.println("Conectado");
+                System.out.println("Conectado!");
 
             } catch (ClassNotFoundException ex) {
-                System.out.println("Error al cargar los Driver");
+                System.out.println("Error al cargar los Driver: "+ ex.getMessage());
             } catch (SQLException ex) {
                 System.out.println("Error al conectar con la base de datos"+ex.getMessage());
 
