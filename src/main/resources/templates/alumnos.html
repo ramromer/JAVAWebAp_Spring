@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Results</title>
+    </head>
+    <body>
+        <h1>Results</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>DNI</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+
+            </tr>
+
+            <tr th:each="Alumno : ${objectList}">
+                <td th:text="${Alumno.idAlumno}"></td>
+                <td th:text="${Alumno.dni}"></td>
+                <td th:text="${Alumno.apellido}"></td>
+                <td th:text="${Alumno.nombre}"></td>
+            </tr>
+        </table>
+    </body>
+</html>

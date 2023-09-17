@@ -1,8 +1,9 @@
-package Models;
+package com.ULPalumnos.ULPAlumnos.SPRING;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Alumno {
+public class Alumno implements Serializable {
     private int idAlumno;
     private int dni;
     private String apellido;
