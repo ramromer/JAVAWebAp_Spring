@@ -1,12 +1,15 @@
-/* Reset some default styles for the example */
 body, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styles for the navbar */
+Table{
+    background-color: grey;
+    color: #fff;
+}
 .navbar {
     position:fixed;
+    width: 100%;
     top:0;
     background-color: #154176;
     justify-content: center;

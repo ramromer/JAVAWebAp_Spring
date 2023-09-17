@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/inicio.css">
-        <title>Estudiantes</title>
+        <title>Carreras</title>
     </head>
     <body>
     <nav class="navbar">
@@ -26,23 +26,24 @@
         </div>
     </nav>
     <div class="contenido">
-    <h1>Results</h1>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>DNI</th>
-                <th>Apellido</th>
-                <th>Nombre</th>
+        <h1>Carreras</h1>
+        <h2>Una carrera de ejemplo </h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Año</th>
+            <th>Estado</th>
 
-            </tr>
+        </tr>
 
-            <tr th:each="Alumno : ${objectList}">
-                <td th:text="${Alumno.idAlumno}"></td>
-                <td th:text="${Alumno.dni}"></td>
-                <td th:text="${Alumno.apellido}"></td>
-                <td th:text="${Alumno.nombre}"></td>
-            </tr>
-        </table>
+        <tr th:each="Materia : ${objectList}">
+            <td th:text="${Materia.idMateria}"></td>
+            <td th:text="${Materia.nombre}"></td>
+            <td th:text="${Materia.anio}"></td>
+            <td th:text="${Materia.activo}"></td>
+        </tr>
+    </table>
     </div>
     <footer>
         <div class="footer">

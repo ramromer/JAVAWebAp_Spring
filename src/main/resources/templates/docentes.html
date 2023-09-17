@@ -30,20 +30,22 @@
         <table>
             <tr>
                 <th>ID</th>
+                <th>Materia</th>
+                <th>Alumno</th>
                 <th>DNI</th>
-                <th>Apellido</th>
-                <th>Nombre</th>
+                <th>Nota</th>
 
             </tr>
 
-            <tr th:each="Alumno : ${objectList}">
-                <td th:text="${Alumno.idAlumno}"></td>
-                <td th:text="${Alumno.dni}"></td>
-                <td th:text="${Alumno.apellido}"></td>
-                <td th:text="${Alumno.nombre}"></td>
+            <tr th:each="Inscripcion : ${objectList}">
+                <td th:text="${Inscripcion.idInscripcion}"></td>
+                <td th:text="${Inscripcion.materia.nombre}"></td>
+                <td th:text="${Inscripcion.alumno.apellido}+${' '}+${Inscripcion.alumno.nombre}"></td>
+                <td th:text="${Inscripcion.alumno.dni}"></td>
+                <td th:text="${Inscripcion.nota}"></td>
             </tr>
         </table>
-    </div>
+        </div>
     <footer>
         <div class="footer">
             <img id="footer" src="images/footer.png" alt="footer">
